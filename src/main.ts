@@ -9,7 +9,6 @@ export function main(_sender: string, message: string, _channel: string): void {
   const bafh = Clan.get();
 
   if (message.includes("whitelist bafh") && !_channel) {
-    const bafh = Clan.get();
     bafh.addPlayerToWhitelist(_sender);
     chatPrivate(_sender, "You've been whitelisted to bafh, enjoy hell!");
     print(`${_sender} has been whitelisted to bafh`, "yellow");
